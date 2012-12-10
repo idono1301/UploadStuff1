@@ -51,7 +51,8 @@ describe "TestLogins" do
          click_link_or_button("Sign in")
          page.should have_content "Signed in successfully."
          click_link_or_button("Users")
-         page.should have_content 'All Userss'
+         page.should have_content 'All Users'
+         page.should have_content @admin.email
       end
    end
 
